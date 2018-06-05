@@ -224,7 +224,7 @@ function admin_styles() {
  */
 function mce_css( $stylesheets ) {
 
-	function style_url() {
+	function editor_stylesheets() {
 
 		return TENUP_SCAFFOLD_URL . ( ( defined( 'SCRIPT_DEBUG' ) && SCRIPT_DEBUG ) ?
 			"assets/css/frontend/editor-style.css" :
@@ -232,5 +232,5 @@ function mce_css( $stylesheets ) {
 
 	}
 
-	return $stylesheets . ',' . style_url();
+	return $stylesheets . ',' . editor_stylesheets();
 }
